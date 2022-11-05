@@ -7,6 +7,7 @@ d = {
 		5: [0, 2]
 }
 
+
 def dfs(d, v, visited, stack):
 	visited[v] = True
 	for i in d[v]:
