@@ -23,9 +23,9 @@ def overlappingDailyBounds(dailyB1, dailyB2):
 	if dailyB1[1] < dailyB2[0] or dailyB2[0] < dailyB1[1]:
 		Return []
 	elif dailyB1[0] < dailyB2[0] and dailyB1[1] < dailyB2[1]:
-        return [(dailyB1[0], dailyB2[1])]
-  elif dailyB2[0] < dailyB1[0] and dailyB2[1] < dailyB1[1]:
-    return [(dailyB2[0], dailyB1[1])]
+        	return [(dailyB1[0], dailyB2[1])]
+  	elif dailyB2[0] < dailyB1[0] and dailyB2[1] < dailyB1[1]:
+    		return [(dailyB2[0], dailyB1[1])]
 
 
 def freeTimeBlocks(calendar1, dailyB1, calendar2, dailyB2, dur):
