@@ -8,12 +8,12 @@ def mergeCalendars(calendar1, calendar2):
 	C  = []
 	start = mergedC[0][0]
 	end = mergedC[0][1]
-	
+
 	for i in range(1, len(mergedC)):
 		if end < mergedC[i][0]:
 			C.append(start, end)
 			start = mergedC[i][0]
-            end = mergedC[i][1]
+	    end = mergedC[i][1]
 		elif end < mergedC[i][1]:
 			End = mergedC[i][1]
 	C.append(start, end)
